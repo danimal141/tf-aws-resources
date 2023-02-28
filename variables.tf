@@ -3,7 +3,7 @@ variable "aws_profile" {
 }
 
 variable "instance_type" {
-  description = "Name of the project"
+  description = "Type of the instance"
   type        = string
   default     = "t2.micro"
 }
