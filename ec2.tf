@@ -3,7 +3,7 @@ resource "aws_instance" "sample_instance" {
   vpc_security_group_ids = [aws_security_group.ec2_ins_security_group.id]
   subnet_id = aws_subnet.sample_public_subnet1.id
   key_name = aws_key_pair.sample_key_pair.id
-  instance_type = "t2.micro"
+  instance_type = var.instance_type
   associate_public_ip_address = "true"
 
   tags = {
