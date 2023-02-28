@@ -2,6 +2,11 @@ variable "aws_profile" {
   default = "default"
 }
 
+variable "instance_type" {
+  description = "Name of the project"
+  type        = string
+  default     = "t2.micro"
+}
 variable "region" {
   default = "ap-northeast-1"
 }
