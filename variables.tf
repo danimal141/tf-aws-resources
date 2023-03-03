@@ -2,6 +2,11 @@ variable "aws_profile" {
   default = "default"
 }
 
+variable "instance_type" {
+  description = "Type of the instance"
+  type        = string
+  default     = "t2.micro"
+}
 variable "region" {
   default = "ap-northeast-1"
 }
